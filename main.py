@@ -7,7 +7,7 @@ Created on Sun Aug 14 19:30:54 2022
 """
 from vpl import VirgoolPostsLink
 from vpsl import VirgoolPostsShortLink
-from banner import HELP,WELCOME
+from banner import WELCOME
 from sys import exit 
 
 def run_vpl():
