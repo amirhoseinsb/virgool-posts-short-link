@@ -62,9 +62,9 @@ class VirgoolPostsShortLink:
                 file.writelines(f'{link}\n')
         print(f'''
               
-1 : link save in the file {self.file_name}_slv.txt
+1 : link save in the file VirgoolLinks/{self.file_name}_short/{self.file_name}_slv.txt
 ---------------------------------------------------------
-2 : link and title save in the file {self.file_name}_with_title.txt ! ''')
+2 : link and title save in the file VirgoolLinks/{self.file_name}_short/{self.file_name}_with_title.txt ! ''')
    
     def check_exit(self):
         if self.file_name.lower() == 'x':
