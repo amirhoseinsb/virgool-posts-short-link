@@ -80,9 +80,9 @@ class VirgoolPostsLink:
         print(f'''
 {self.user_name}_link directory created
 
-1 : link save in the file {self.user_name}_link.txt
+1 : link save in the file VirgoolLinks/{self.user_name}_link/{self.user_name}_link.txt
 ------------------------------------------------------
-2 : link and title save in the file {self.user_name}_title.txt ! ''')
+2 : link and title save in the file VirgoolLinks/{self.user_name}_link/{self.user_name}_title.txt ! ''')
               
     def close_driver(self):
         self.driver.close()
