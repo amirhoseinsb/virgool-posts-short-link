@@ -22,7 +22,7 @@ class VirgoolPostsShortLink:
     
     def file_input(self):
         self.postslink = []
-        with open(f'./{self.file_name}/{self.file_name}.txt','r') as file:
+        with open(f'./VirgoolLinks/{self.file_name}/{self.file_name}.txt','r') as file:
             for link in file:
                 self.postslink.append(link.replace("\n",""))
     

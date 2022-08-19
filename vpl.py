@@ -67,14 +67,14 @@ class VirgoolPostsLink:
                 pass
     def write_in_disk(self):
         print('\n status for write in disk \n')
-        path = Path(f'./{self.user_name}_link')
+        path = Path(f'./VirgoolLinks/{self.user_name}_link')
         path.mkdir(parents=True, exist_ok=True)
         
-        with open(f'./{self.user_name}_link/{self.user_name}_title.txt','w') as f:
+        with open(f'./VirgoolLinks/{self.user_name}_link/{self.user_name}_title.txt','w') as f:
             for i in tqdm(self.links):
                 f.write(f'{i}\n')
                 
-        with open(f'./{self.user_name}_link/{self.user_name}_link.txt','w') as f:
+        with open(f'./VirgoolLinks/{self.user_name}_link/{self.user_name}_link.txt','w') as f:
             for i in tqdm(self.slv):
                 f.write(f'{i}\n')
         print(f'''
