@@ -50,14 +50,14 @@ class VirgoolPostsShortLink:
     def write_in_disk(self):
         print('\n status for write in disk \n')
         
-        path = Path(f'./{self.file_name}_short')
+        path = Path(f'./VirgoolLinks/{self.file_name}_short')
         path.mkdir(parents=True, exist_ok=True)
         
-        with open(f'./{self.file_name}_short/{self.file_name}_with_title.txt','w') as file:
+        with open(f'./VirgoolLinks/{self.file_name}_short/{self.file_name}_with_title.txt','w') as file:
             for link in tqdm(self.shorts_link_with_title):
                 file.writelines(f'{link}\n')
 
-        with open(f'./{self.file_name}_short/{self.file_name}_slv.txt','w') as file :
+        with open(f'./VirgoolLinks/{self.file_name}_short/{self.file_name}_slv.txt','w') as file :
             for link in tqdm(self.links):
                 file.writelines(f'{link}\n')
         print(f'''
